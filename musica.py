@@ -1,20 +1,18 @@
 class Musica:
-    nome = ''
-    artista = ''
-    duracao = float
+    musicas = []
     
-m1 = Musica()
+    def __init__(self, nome, artista, duracao: float):
+        self.nome = nome
+        self.artista = artista
+        self.duracao = duracao
+        Musica.musicas.append(self)
+    def __str__(self):
+        print(f'{self.nome} | {self.artista}')
+        
+    def listar_musicas():
+        for musica in Musica.musicas:
+            print(f'{musica.nome} | {musica.artista} | {musica.duracao}')
+            
+m1 = Musica('Shape of You', 'Ed. Sheeran', 3.43)        
 
-m1.nome = 'Beat it'
-m1.artista = 'Michael Jackson'
-m1.duracao = 4.20
-    
-m2 = Musica()
-m2.nome = 'Bohemian Rhapsody'
-m2.artista = 'Queen'
-m2.duracao = 355
-
-m3 = Musica()
-m3.nome = 'Shape of You'
-m3.artista = 'Ed Sheeran'
-m3.duracao = 234
+Musica.listar_musicas()
