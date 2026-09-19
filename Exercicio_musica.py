@@ -7,7 +7,7 @@ class Musica:
         self.duracao = duracao
         Musica.musicas.append(self)
     def __str__(self):
-        print(f'{self.nome} | {self.artista}')
+        return f'{self.nome} | {self.artista}'
         
     def listar_musicas():
         for musica in Musica.musicas:
