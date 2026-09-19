@@ -11,8 +11,10 @@ class Musica:
         
     def listar_musicas():
         for musica in Musica.musicas:
-            print(f'{musica.nome} | {musica.artista} | {musica.duracao}')
+            print(f'{musica.nome} | {musica.artista} | {musica.duracao:.2f}')
             
-m1 = Musica('Shape of You', 'Ed. Sheeran', 3.43)        
+musica1 = Musica(nome='Under Pressure', artista='Queen & David Bowie', duracao=2.48)
+musica2 = Musica(nome='The Trooper', artista='Iron Maiden', duracao=2.45)
+musica3 = Musica(nome='Hotel California', artista='Eagles', duracao=3.90)      
 
 Musica.listar_musicas()
