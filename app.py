@@ -1,8 +1,9 @@
 from modelos.restaurante import Restaurante
 
-restaurante_praca = Restaurante('Praça', 'Gourmet')
 restaurante_forno_brasa = Restaurante('Forno & Brasa', 'Pizza')
-restaurante_sakura_gawa = Restaurante('Sakura Gawa', 'Japonesa')
+restaurante_forno_brasa.avaliar('Cauã', 10)
+restaurante_forno_brasa.avaliar('Fulano', 7)
+restaurante_forno_brasa.avaliar('Siclano', 5.5)
 
 restaurante_forno_brasa.alternar_estado()
 
