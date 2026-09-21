@@ -8,7 +8,9 @@ class Restaurante:
         self._categoria = categoria.upper()
         self._ativo = False
         self._avaliacoes = []
+        self._cardapio = []
         Restaurante.restaurantes.append(self)
+        
     
     def __str__(self):
         return f'{self._nome} | {self._categoria}'
