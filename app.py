@@ -7,6 +7,8 @@ bebida_teste = Bebida('B_teste', 5.50, 400)
 prato_teste = Prato('P_teste', 24.90, 'Parmegiana de frango')
 restaurante_teste.adicionar_no_cardapio(bebida_teste)
 restaurante_teste.adicionar_no_cardapio(prato_teste)
+bebida_teste.aplicar_desconto()
+prato_teste.aplicar_desconto()
 
 def main():
     print(bebida_teste)
